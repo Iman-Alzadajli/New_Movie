@@ -1,6 +1,6 @@
 # 🎬 New_Movie - Interactive Movie Interface
 
-![Project Screenshot](https://b.top4top.io/p_3511izbnr1.png)
+![Project Screenshot](https://a.top4top.io/p_3511dqdpz1.png)
 
 ---
 
