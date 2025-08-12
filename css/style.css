@@ -151,9 +151,10 @@ nav a:hover {
 .Movied {
     display: flex;
     flex-direction: column;
-    padding: 140px 50px;
+    padding: 100px 160px;
+
     justify-content: center;
-    min-height: 50vh;
+    min-height: 75vh;
 }
 
 .hero-text {
