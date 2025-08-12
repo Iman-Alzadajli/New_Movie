@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewMovie - Infinite Carousel</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <header>
+        <div class="logo">
+              <a href="index.html" style="text-decoration: none; color: inherit;">
+
+            <span class="text1">NEW</span>
+            <span class="text2">MOVIE</span>
+        </div>
+        <!--nav links-->
+        <nav>
+            <a href="index.html">New Movie</a>
+           <!-- Genre with dropdown -->
+       <div class="dropdown">
+            <a href="#">Genre</a>
+              <div class="dropdown-menu">
+                <a href="#">Action</a>
+                <a href="#">Comedy</a>
+                <a href="#">Drama</a>
+                <a href="#">Horror</a>
+        </div>
+    </div>
+            <a href="#">Country</a>
+            <a href="#">Movie</a>
+            <a href="#">TV Series</a>
+        </nav>
+
+        <!--search bar-->
+        <div class="search">
+            <input type="text" placeholder="Search movies...">
+            <button class="search-btn"></button>
+        </div>
+
+
+    </header>
+
+    <!--end of navbar-->
+
+    <!-- Movied Section -->
+    <section class="Movied">
+
+        <div class="hero-text">
+            <h1 id="movie-title">Spider-Man <br> No Way Home</h1>
+            <div class="movie-info">
+                <span class="imdb" id="imdb-rating">IMDb</span>
+                <span id="movie-year">• 2021</span>
+                <span id="movie-duration">1 hour 55 minutes</span>
+                <span id="movie-genre">• Sci-fi</span>
+            </div>
+
+
+            <p id="movie-description">
+                With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.
+            </p>
+
+            <!-- See More Button (hidden by default) -->
+            <button id="see-more-btn" class="see-more-btn" style="display: none;">See more</button>
+            <!--Watch Buttons-->
+
+            <div class="buttons">
+                <button class="trailer">Watch trailer</button>
+                <button class="watch-now">Watch now</button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!--end of movie description-->
+
+
+    <!-- Infinite Carousel Section (with slider and buttons ) -->
+    <section class="movie-carousel">
+
+        <div class="carousel-controls"> <!--only the buttons -->
+
+            <button class="prev" id="prevBtn">‹</button>
+            <button class="next" id="nextBtn">›</button>
+        </div>
+        
+        <div class="carousel-viewport">
+
+            <!--the code for poster slider (carousel) -->
+
+            <div class="carousel-track" id="carouselTrack">
+               
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

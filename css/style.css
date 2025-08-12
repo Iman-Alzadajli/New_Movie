@@ -1,0 +1,384 @@
+/* General Page Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Background is set via JS */
+    background-size: cover;  
+    background-repeat: no-repeat;
+    font-family: "SF Pro Display", sans-serif; /* Added for consistency */
+    overflow-x: hidden; /* Prevents horizontal scrollbar */
+}
+
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full page */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 15px;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .text1 {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 3px 8px;
+    font-weight: bold;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.logo .text2 {
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Links */
+nav a {
+    margin:10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* dropdown container */
+.dropdown {
+    display: inline-block;  /* same line*/
+    position: relative;    
+}
+
+/* dropdown menu */
+.dropdown-menu {
+    position: absolute;   
+    top: 100%;           
+    background: #333;      
+    min-width: 120px;   
+    
+    display: none;  
+}
+
+/* menu nav */
+.dropdown-menu a {
+    display: block;        
+    padding: 10px;         
+    color: white;          
+   
+}
+
+.dropdown-menu a:hover {
+    background: #555;    
+}
+
+/* hover Genre */
+.dropdown:hover .dropdown-menu {
+    display: block;     /*show menu*/ 
+}
+
+/* Search Box Styling */
+.search {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 25px;
+    width: 280px;
+}
+
+.search:focus-within {
+    border-color: #cac9c3;
+    background: rgba(255,255,255,0.12);
+}
+
+.search input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.search input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.search-btn {
+    width: 38px;
+    height: 38px;
+    background: transparent;
+    border: 1px solid rgba(234, 234, 233, 0.3);
+    border-radius: 50%;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    transform: scale(1.05);
+}
+
+.search-btn:before {
+    content: "⌕";
+    font-size: 16px;
+    color: #fff; /* Changed to white for better visibility */
+}
+
+/* Main movied Section */
+.Movied {
+    display: flex;
+    flex-direction: column;
+    padding: 140px 50px;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.hero-text {
+    max-width: 900px;
+}
+
+.hero-text h1 {
+    font-size: 44px;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: bold;
+    color: #fff; 
+}
+
+/* Movie Information Styling like year etc ... */
+.movie-info {
+    margin: 15px 0;
+    font-size: 14px;
+    font-family: "SF Pro Display", sans-serif;
+    color: #ffffff; 
+}
+
+.movie-info span {
+    margin-right: 5px;
+}
+
+/* IMDb Rating Styling - Black background with yellow text */
+.imdb {
+    background-color: #000;
+    color: #ffcc00;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    margin: 20px 0; /* Adjusted margin */
+    color: #ccc;
+    max-width: 600px;
+}
+
+/* See More Button Styling */
+.see-more-btn {
+    border: none;
+    color: #ffcc00;
+    font-size: 14px;
+    text-decoration: underline;
+    margin: 10px 0;
+    display: inline;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Action Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.watch-now:before {
+    content: "▶    ";
+    font-size: 16px;
+    color: #000;
+}
+
+.watch-now{
+    background: #ffcc00;
+    padding: 10px 20px;
+    color: #020202;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease;
+
+}
+
+/* Watch Now Button - Hover effects */
+.watch-now:hover {
+    background: #e6b800;    /* Darker yellow on hover */
+    transform: translateY(-2px);  /* Move button up 2px */
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.4);  /* Add yellow glow */
+}
+
+.trailer {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+/* Trailer Button - Hover effects */
+.trailer:hover {
+    background: #fff;       /* White background on hover */
+    color: #020202;         /* Dark text on hover */
+    transform: translateY(-2px);  /* Move button up 2px */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);  /* Add white glow */
+}
+
+/* Main Carousel Container - Fixed at bottom */
+.movie-carousel {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px; /* move the moving buttons */ 
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Carousel Controls buttons both */
+.carousel-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* Navigation Buttons > and <  */
+.prev, .next {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 8px;
+    padding: 0 9px;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Carousel Viewport - This is the visible window that shows the posters */
+.carousel-viewport {
+    width: 100%;
+    overflow: hidden; /* Hide posters outside the visible area when all poser done */
+}
+
+/* CRITICAL: This is what makes the infinite scrolling smooth */
+.carousel-track {
+    display: flex;
+    gap: 15px; /* Space between posters */
+}
+
+/* Individual Movie Poster Styling */
+.carousel-track img {
+    width: 150px; /* Default width for large screens */
+    height: 225px; /* Default height for large screens */
+    cursor: pointer;
+    filter: brightness(1); /* brightness for poster*/ 
+    border-radius: 8px;
+    /* Smooth transitions for hover effects */
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /*smmoth effect when point to poster*/ 
+    border: 2px solid transparent; /* Add transparent border to prevent layout shift */
+}
+
+/* Poster Hover Effects - Enlarge and brighten hovered poster */
+.carousel-track img:hover {
+    transform: scale(1.15);
+    filter: brightness(1.3);
+}
+
+/* Dimming Effect - When hovering, dim all other posters */
+.carousel-track.dimmed img:not(:hover) {
+    filter: brightness(0.6); /*when hover posters*/ 
+    transform: scale(0.95); /*size poster*/ 
+}
+
+/* Active poster highlighting
+.carousel-track img.active {
+    border-color: #ffcc00; /* **
+ 
+}
+ */
+
+/* ======== RESPONSIVE DESIGN ======== */
+
+/* For Tablets and smaller devices */
+@media (max-width: 1024px) {
+    .carousel-track img {
+        width: 120px;
+        height: 180px;
+    }
+    .Movied {
+        padding-top: 200px; /* Add padding to avoid overlap with wrapped header */
+    }
+}
+
+/* For Mobile devices */
+@media (max-width: 767px) {
+    header {
+        justify-content: center; /* Center header items on mobile */
+    }
+    .Movied {
+        padding: 250px 20px 20px;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .buttons {
+        justify-content: center;
+    }
+    .movie-carousel {
+        position: relative; /* Remove fixed position on mobile */
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+    .carousel-controls {
+        justify-content: center;
+    }
+    .carousel-track img {
+        width: 100px;
+        height: 150px;
+    }
+}
