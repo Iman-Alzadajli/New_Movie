@@ -38,7 +38,7 @@ This project was completed under the valuable guidance and supervision of my men
 | Name              | Role                  |
 | ----------------- | --------------------- |
 | 🏢 **Smart Developer** | Training Company      |
-| 👤 **Anwar Almujazi**           | Project Supervisor    |
+| 👤 **Anwar**           | Project Supervisor    |
 | 👤 **Aysha Alshamsi**  | Project Supervisor    |
 
 
