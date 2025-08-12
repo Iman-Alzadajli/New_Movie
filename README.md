@@ -41,6 +41,6 @@ This project was completed under the valuable guidance and supervision of my men
 | 👤 **Anwar Almujazi**           | Project Supervisor    |
 | 👤 **Aysha Alshamsi**  | Project Supervisor    |
 
----
 
-Thank you for reviewing my project! ✨
+
+
